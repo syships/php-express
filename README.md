@@ -36,17 +36,17 @@ Once the extension is installed, simply use it in your code by  :
 
 ```
 $config = [
-            'zop'=>[
-                'express'=>'zop',
-                'app_id'=>'app_id',
-                'app_secret'=>'app_secret'
-            ]
-        ];
-        //拦截状态查询接口
-        $zopApi = new ZopApplication($config['zop']);
-        $action = 'thirdcenter.queryInterceptAndReturnStatus';
-        $data = ['billCode'=>73100057041226];
-        $response = $zopApi->call($action, $data);
-        return ($response);
+    'zop'=>[
+        'express'=>'zop',
+        'app_id'=>'app_id',
+        'app_secret'=>'app_secret'
+    ]
+];
+//拦截状态查询接口
+$zopApi = new ZopApplication($config['zop']);
+$action = 'thirdcenter.queryInterceptAndReturnStatus';
+$data = ['billCode'=>73100057041226];
+$response = $zopApi->call($action, $data);
+return ($response);
 
 ```
