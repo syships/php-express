@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "syships\\zop\\": "src/"
+            "syships\\express\\": "src/"
         }
     }
 }
