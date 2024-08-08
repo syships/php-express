@@ -1,0 +1,22 @@
+{
+    "name": "syships/php-express",
+    "description": "The express SDK for the php",
+    "type": "php-extension",
+    "keywords": ["php","express","extension"],
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "syships",
+            "email": "syships.cn@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "syships\\zop\\": "src/"
+        }
+    }
+}
