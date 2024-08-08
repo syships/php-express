@@ -7,8 +7,8 @@ class ZopApplication {
     private $appId;
     private $appSecret;
 
-    public function __construct($config) {
-        if($config['debug']){
+    public function __construct($config,$debug=true) {
+        if($debug){
             $this->baseUrl = 'http://japi-test.zto.com/';
         }else{
             $this->baseUrl = 'http://japi-test.zto.com/';
