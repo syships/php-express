@@ -2,19 +2,20 @@
 
 namespace syships\express;
 
-
-
 class Application {
     private $baseUrl;
     private $appid;
     private $appsecret;
     private $tag;
 
-    public function __construct($baseUrl, $appid = '4fcf58d7f359f05b643a7', $appsecret = '78bdd4970c57b71b82c62072f700b654', $tag = 'your_tag') {
-        $this->baseUrl = $baseUrl;
-        $this->appid = $appid;
-        $this->appsecret = $appsecret;
-        $this->tag = $tag;
+    public function __construct($config) {
+        if($config['debug']){
+            $this->baseUrl = 'http://japi-test.zto.com/';
+        }else{
+            $this->baseUrl = 'http://japi-test.zto.com/';
+        }
+        $this->appid = $config['app_id'];
+        $this->appsecret = $config['app_secret'];
     }
 
     public function call($action, $data) {
