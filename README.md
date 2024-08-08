@@ -3,7 +3,7 @@ This is a personal plugin for study.
 It is strongly recomended thant you not use it. 
 This plugin is unstable.
 ======================
-It is the zop plugin for php
+It is the express plugin for php
 ======================
 
 Installation
@@ -14,13 +14,13 @@ The preferred way to install this extension is through [composer](https://getcom
 Either run
 
 ```
-php composer.phar require --prefer-dist syships/php-zop "*"
+php composer.phar require --prefer-dist syships/php-express "*"
 ```
 
 or add
 
 ```
-"syships/php-zop": "*"
+"syships/php-express": "*"
 ```
 
 to the require section of your `composer.json` file.
