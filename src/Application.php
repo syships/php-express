@@ -4,9 +4,8 @@ namespace syships\express;
 
 class Application {
     private $baseUrl;
-    private $appid;
-    private $appsecret;
-    private $tag;
+    private $appId;
+    private $appSecret;
 
     public function __construct($config) {
         if($config['debug']){
@@ -14,12 +13,12 @@ class Application {
         }else{
             $this->baseUrl = 'http://japi-test.zto.com/';
         }
-        $this->appid = $config['app_id'];
-        $this->appsecret = $config['app_secret'];
+        $this->appId = $config['app_id'];
+        $this->appSecret = $config['app_secret'];
     }
 
     public function call($action, $data) {
-        $properties = new ZopProperties($this->appid, $this->appsecret);
+        $properties = new ZopProperties($this->appId, $this->appSecret);
         $client = new ZopClient($properties);
         $request = new ZopRequest();
         $request->setUrl($this->baseUrl.$action);
