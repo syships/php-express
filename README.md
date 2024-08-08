@@ -33,6 +33,8 @@ Before using the extension,you can add the _ide_helper.php under your applicatio
 
 Once the extension is installed, simply use it in your code by  :
 
+
+```
 $config = [
             'zop'=>[
                 'express'=>'zop',
@@ -46,3 +48,5 @@ $config = [
         $data = ['billCode'=>73100057041226];
         $response = $zopApi->call($action, $data);
         return ($response);
+
+```
