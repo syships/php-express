@@ -1,5 +1,5 @@
 <?php
-namespace logistic\sto;
+namespace syships\logistic\sto;
 
 /**
  * 极兔发送请求
