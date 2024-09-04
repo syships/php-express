@@ -35,18 +35,23 @@ Once the extension is installed, simply use it in your code by  :
 
 
 ```
+$companyName = '中通';
 $config = [
-    'zop'=>[
-        'express'=>'zop',
-        'app_id'=>'app_id',
-        'app_secret'=>'app_secret'
-    ]
+    'express'=>'zop',
+    'app_id'=>'app_id',
+    'app_secret'=>'app_secret'
 ];
-//拦截状态查询接口
-$zopApi = new ZopApplication($config['zop']);
-$action = 'thirdcenter.queryInterceptAndReturnStatus';
-$data = ['billCode'=>73100057041226];
-$response = $zopApi->call($action, $data);
-return ($response);
+$data = [
+    'third_biz_no'=>'',//外部业务单号
+    'waybill_code'=>'',//运单号
+    'desc'=>''//取消描述
+];
+$logisticApp = new LogisticApplication($companyName,$config);
+//拦截取消请求
+if(!$logisticApp->interceptCancel($data)){
+    throw new Exception($logisticApp->getFirstError());
+}
+
+return $logisticApp->getSuccessData();
 
 ```
