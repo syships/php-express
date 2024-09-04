@@ -1,6 +1,6 @@
 # php-express
 This is a personal plugin for study.
-It is strongly recomended thant you not use it. 
+It is strongly recomended thant you DO NOT use it. 
 This plugin is unstable.
 ======================
 It is the express plugin for php
