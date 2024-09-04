@@ -3,7 +3,7 @@ This is a personal plugin for study.
 It is strongly recomended thant you DO NOT use it. 
 This plugin is UNSTABLE.
 ======================
-It is the express plugin for php
+It is the logistic plugin for php
 ======================
 
 Installation
@@ -20,7 +20,7 @@ php composer.phar require --prefer-dist syships/php-express "*"
 or add
 
 ```
-"syships/php-express": "*"
+"syships/php-logistic": "*"
 ```
 
 to the require section of your `composer.json` file.
@@ -28,8 +28,6 @@ to the require section of your `composer.json` file.
 
 Usage
 -----
-
-Before using the extension,you can add the _ide_helper.php under your application folder.
 
 Once the extension is installed, simply use it in your code by  :
 
