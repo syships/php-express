@@ -1,5 +1,5 @@
 {
-    "name": "syships/php-express",
+    "name": "syships/php-logistic",
     "description": "The logistic SDK for the php",
     "type": "php-extension",
     "keywords": ["php","logistic","extension"],
