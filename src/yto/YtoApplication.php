@@ -1,7 +1,7 @@
 <?php
-namespace logistic\yto;
+namespace syships\logistic\yto;
 
-use logistic\LogisticsActionInterface;
+use syships\logistic\LogisticsActionInterface;
 
 /**
  * 圆通公共调用类
