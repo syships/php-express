@@ -1,8 +1,8 @@
 {
     "name": "syships/php-express",
-    "description": "The express SDK for the php",
+    "description": "The logistic SDK for the php",
     "type": "php-extension",
-    "keywords": ["php","express","extension"],
+    "keywords": ["php","logistic","extension"],
     "license": "Apache-2.0",
     "authors": [
         {
@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "syships\\express\\": "src/"
+            "syships\\logistic\\": "src/"
         }
     }
 }
