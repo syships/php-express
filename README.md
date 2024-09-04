@@ -33,23 +33,28 @@ Once the extension is installed, simply use it in your code by  :
 
 
 ```
+require_once __DIR__.'/vendor/autoload.php';
+
+use Symfony\Component\HttpFoundation\Response;
+use syships\logistic\LogisticApplication;
+
 $companyName = '中通';
 $config = [
-    'app_id'=>'app_id',
-    'app_secret'=>'app_secret',
+    'app_id'=>'4fcf58d7f359f05b643a7',
+    'app_secret'=>'78bdd4970c57b71b82c62072f700b654',
     'server_url'=>'http://japi-test.zto.com/',
 ];
 $data = [
-    'third_biz_no'=>'',//外部业务单号
-    'waybill_code'=>'',//运单号
-    'desc'=>''//取消描述
+    'waybill_code'=>"73100135377958",//运单号
 ];
 $logisticApp = new LogisticApplication($companyName,$config);
 //拦截取消请求
-if(!$logisticApp->interceptCancel($data)){
-    throw new Exception($logisticApp->getFirstError());
+if($logisticApp->track($data)){
+    $response = new Response(json_encode($logisticApp->getSuccessData()),200,['Content-Type'=>'application/json']);
+    $response->send();
+}else{
+    $response = new Response($logisticApp->getFirstError(),400,['Content-Type'=>'application/json']);
+    $response->send();
 }
-
-return $logisticApp->getSuccessData();
 
 ```
