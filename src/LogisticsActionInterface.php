@@ -1,6 +1,6 @@
 <?php
 
-namespace logistic;
+namespace syships\logistic;
 
 /**
  * 物流服务接口
