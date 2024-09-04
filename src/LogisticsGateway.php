@@ -56,10 +56,13 @@ class LogisticsGateway{
      */
     public function __construct($providerName,$config)
     {
+        if(!isset($config['company_name']) || !isset($config['app_id']) || !isset($config['app_secret']) || !isset($config['server_url'])){
+            throw new \Exception("Missing company_name and company_name parameters");
+        }
         if (!array_key_exists($providerName, self::PROVIDERS)) {
             throw new \Exception("Unknown provider: " . $providerName);
         }
-        $this->_provider_name = $providerName;
+        $this->_provider_name = $config['company_name'];
         $this->_config = $config;
     }
     
