@@ -35,9 +35,9 @@ Once the extension is installed, simply use it in your code by  :
 ```
 $companyName = '中通';
 $config = [
-    'express'=>'zop',
     'app_id'=>'app_id',
-    'app_secret'=>'app_secret'
+    'app_secret'=>'app_secret',
+    'server_url'=>'http://japi-test.zto.com/',
 ];
 $data = [
     'third_biz_no'=>'',//外部业务单号
