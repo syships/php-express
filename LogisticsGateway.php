@@ -51,16 +51,20 @@ class LogisticsGateway{
 
     /**
      * 初始化
-     * @param string $providerName 物流公司名称，中通，圆通，申通，极兔
+     * @param string $providerName
      * @param array $config 配置信息
+     *   -company_name 物流公司名称，中通，圆通，申通，极兔
+     *   -app_id
+     *   -app_secret
+     *   -server_url
      */
-    public function __construct($providerName,$config)
+    public function __construct($config)
     {
         if(!isset($config['company_name']) || !isset($config['app_id']) || !isset($config['app_secret']) || !isset($config['server_url'])){
             throw new \Exception("Missing company_name or app_id or app_secret or server_url parameters");
         }
-        if (!array_key_exists($providerName, self::PROVIDERS)) {
-            throw new \Exception("Unknown provider: " . $providerName);
+        if (!array_key_exists($config['company_name'], self::PROVIDERS)) {
+            throw new \Exception("Unknown provider: " . $config['company_name']);
         }
         $this->_provider_name = $config['company_name'];
         $this->_config = $config;
