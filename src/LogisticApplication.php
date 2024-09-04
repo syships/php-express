@@ -46,7 +46,7 @@ namespace syships\logistic;
  * - 拦截状态（仅支持中通，接口尚未完善）：
  *   - 中通: https://open.zto.com/#/interfaces?resourceGroup=40&apiName=thirdcenter.queryInterceptAndReturnStatus
  *   - 圆通:
-*    - 申通:
+ *    - 申通:
  *   - 极兔: 
  *
  * 调用示例：
