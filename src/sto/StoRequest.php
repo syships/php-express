@@ -1,5 +1,5 @@
 <?php
-namespace logistic\sto;
+namespace syships\logistic\sto;
 
 /**
  * 极兔sdk,模仿中通
