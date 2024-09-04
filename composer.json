@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "syships\\logistic\\": "src/"
+            "syships\\logistic\\": "./"
         }
     }
 }
