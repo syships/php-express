@@ -1,5 +1,5 @@
 <?php
-namespace logistic\jt;
+namespace syships\logistic\jt;
 
 /**
  * 极兔发送请求
