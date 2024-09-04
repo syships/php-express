@@ -1,8 +1,8 @@
 <?php
 
-namespace logistic\zop;
+namespace syships\logistic\zop;
 
-use logistic\LogisticsActionInterface;
+use syships\logistic\LogisticsActionInterface;
 
 /**
  * 中通操作类
