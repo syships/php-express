@@ -5,7 +5,7 @@
  * Date: 6/13/18
  * Time: 5:47 PM
  */
-namespace syships\express\zop;
+namespace syships\logistic\zop;
 
 
 class ZopProperties
