@@ -1,5 +1,5 @@
 <?php
-namespace logistic;
+namespace syships\logistic;
 /**
  * 物流调用类
  * 
