@@ -1,5 +1,5 @@
 <?php
-namespace syships\express\zop;
+namespace syships\logistic\zop;
 
 include "ZopHttpUtil.php";
 
