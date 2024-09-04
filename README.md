@@ -40,8 +40,8 @@ use syships\logistic\LogisticApplication;
 
 $companyName = '中通';
 $config = [
-    'app_id'=>'4fcf58d7f359f05b643a7',
-    'app_secret'=>'78bdd4970c57b71b82c62072f700b654',
+    'app_id'=>'app_id',
+    'app_secret'=>'app_secret',
     'server_url'=>'http://japi-test.zto.com/',
 ];
 $data = [
