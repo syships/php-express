@@ -1,11 +1,11 @@
 <?php
-namespace logistic;
+namespace syships\logistic;
 
 use Exception;
-use logistic\jt\JtApplication;
-use logistic\sto\StoApplication;
-use logistic\yto\YtoApplication;
-use logistic\zop\ZopApplication;
+use syships\logistic\jt\JtApplication;
+use syships\logistic\sto\StoApplication;
+use syships\logistic\yto\YtoApplication;
+use syships\logistic\zop\ZopApplication;
 
 /**
  * 物流类公共方法
