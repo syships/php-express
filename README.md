@@ -1,6 +1,6 @@
 # php-logistic
 This is a personal plugin for study.
-It is strongly recomended thant you DO NOT use it. 
+It is strongly recomended that you DO NOT use it. 
 This plugin is UNSTABLE.
 ======================
 It is the logistic plugin for php
