@@ -1,8 +1,8 @@
 <?php
 
-namespace express\zop;
+namespace logistic\zop;
 
-use express\LogisticsActionInterface;
+use logistic\LogisticsActionInterface;
 
 /**
  * 中通操作类
