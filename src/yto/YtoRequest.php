@@ -1,5 +1,5 @@
 <?php
-namespace logistic\yto;
+namespace syships\logistic\yto;
 
 /**
  * 圆通sdk,模仿中通
