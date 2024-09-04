@@ -14,7 +14,7 @@ The preferred way to install this extension is through [composer](https://getcom
 Either run
 
 ```
-php composer.phar require --prefer-dist syships/php-express "*"
+php composer.phar require --prefer-dist syships/php-logistic "*"
 ```
 
 or add
