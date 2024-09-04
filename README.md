@@ -48,7 +48,7 @@ $data = [
     'waybill_code'=>"73100135377958",//运单号
 ];
 $logisticApp = new LogisticApplication($companyName,$config);
-//拦截取消请求
+
 if($logisticApp->track($data)){
     $response = new Response(json_encode($logisticApp->getSuccessData()),200,['Content-Type'=>'application/json']);
     $response->send();
