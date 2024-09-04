@@ -38,8 +38,8 @@ require_once __DIR__.'/vendor/autoload.php';
 use Symfony\Component\HttpFoundation\Response;
 use syships\logistic\LogisticApplication;
 
-$companyName = '中通';
 $config = [
+    'company_name'=>'中通',
     'app_id'=>'app_id',
     'app_secret'=>'app_secret',
     'server_url'=>'http://japi-test.zto.com/',
