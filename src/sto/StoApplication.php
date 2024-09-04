@@ -1,8 +1,8 @@
 <?php
 
-namespace logistic\sto;
+namespace syships\logistic\sto;
 
-use logistic\LogisticsActionInterface;
+use syships\logistic\LogisticsActionInterface;
 
 /**
  * 极兔操作类
